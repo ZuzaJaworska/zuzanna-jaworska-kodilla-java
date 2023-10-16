@@ -37,8 +37,10 @@ class CollectionTestSuite {
         OddNumbersExterminator oddNumbersExterminatorEmpty = new OddNumbersExterminator();
         List<Integer> emptyNumbersList = new ArrayList<>();
         List<Integer> emptyList = new ArrayList<>();
+
         //When
         List<Integer> resultEmpty = oddNumbersExterminatorEmpty.exterminate(emptyNumbersList);
+
         //Then
         Assertions.assertEquals(emptyList, resultEmpty);
     }
@@ -52,26 +54,16 @@ class CollectionTestSuite {
         //Given
         System.out.println("---Testing normal list---");
         OddNumbersExterminator oddNumbersExterminatorNormal = new OddNumbersExterminator();
-        List<Integer> normalList = new ArrayList<>();
-        normalList.add(1);
-        normalList.add(2);
-        normalList.add(3);
-        normalList.add(4);
-        normalList.add(5);
-        normalList.add(6);
-        normalList.add(7);
-        normalList.add(8);
-        normalList.add(9);
-        normalList.add(10);
+        Integer a[] = new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        List<Integer> normalList = Arrays.asList(a);
+        Integer b[] = new Integer[] { 2, 4, 6, 8, 10 };
+        List<Integer> expectedList = Arrays.asList(b);
+        //System.out.println(expectedList);
 
-        List<Integer> expectedList = new ArrayList<>();
-        expectedList.add(2);
-        expectedList.add(4);
-        expectedList.add(6);
-        expectedList.add(8);
-        expectedList.add(10);
         //When
         List<Integer> resultNormal = oddNumbersExterminatorNormal.exterminate(normalList);
+        //System.out.println(resultNormal);
+
         //Then
         Assertions.assertEquals(expectedList, resultNormal);
     }
