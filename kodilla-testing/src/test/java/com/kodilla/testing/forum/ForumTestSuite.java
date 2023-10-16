@@ -25,7 +25,7 @@ class ForumTestSuite {
     }
 
     @DisplayName("when create SimpleUser with realName, " +
-                 "then getRealName should return real user name"
+            "then getRealName should return real user name"
     )
     @Test
     void testCaseRealName() {
@@ -39,13 +39,15 @@ class ForumTestSuite {
     }
 
     @DisplayName("when create SimpleUser with name, " +
-                 "then getUsername should return correct name"
+            "then getUsername should return correct name"
     )
     @Test
     void testCaseUsername() {
         //Given
         SimpleUser simpleUser = new SimpleUser("theForumUser", "John Smith");
+
         String expectedResult = "theForumUser";
+
         //When
         String result = simpleUser.getUsername();
         //Then
