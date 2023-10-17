@@ -14,21 +14,25 @@ public class ShapeCollector {
 
     //metoda dodająca figurę do kolekcji
     public void addFigure(Shape shape) {
-
+        shapeCollection.add(shape);
     }
 
     //metoda usuwająca figurę z kolekcji
     public boolean removeFigure(Shape shape) {
-        return false;
+        return shapeCollection.remove(shape);
     }
 
     //metoda pobierająca z kolekcji figurę z pozycji n listy
     public Shape getFigure(int n) {
-        return null;
+        if (n >= 0 && n < shapeCollection.size()) {
+            return shapeCollection.get(n);
+        } else {
+            return null;
+        }
     }
 
     //metoda zwracająca nazwy wszystkich figur w postaci jednego Stringa
     public String showFigures() {
-        return "";
+        return shapeCollection.toString();
     }
 }

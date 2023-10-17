@@ -29,7 +29,7 @@ public class ShapeCollectorTestSuite {
 
     @AfterEach
     public void afterEveryTest() {
-        System.out.println("Test Case: end");
+        System.out.println("#" + testCounter + " Test Case: end");
     }
 
     @Nested
@@ -118,10 +118,7 @@ public class ShapeCollectorTestSuite {
             shapeCollector.addFigure(shape);
 
             //When
-            Shape result = shapeCollector.getFigure(0); // zmienić 0 na inny int,
-            // ale dopiero po skonstruowaniu addFigure() żeby najpierw wyrzuciło błąd.
-            // Test wychodzi dobrze, bo metoda addFigure() nie działa i lista jest pusta,
-            // więc getFigure() zwraca null.
+            Shape result = shapeCollector.getFigure(1);
 
             //Then
             Assertions.assertNull(result);
