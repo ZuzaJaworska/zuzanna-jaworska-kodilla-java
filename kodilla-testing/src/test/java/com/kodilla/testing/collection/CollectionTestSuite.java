@@ -54,10 +54,8 @@ class CollectionTestSuite {
         //Given
         System.out.println("---Testing normal list---");
         OddNumbersExterminator oddNumbersExterminatorNormal = new OddNumbersExterminator();
-        Integer a[] = new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        List<Integer> normalList = Arrays.asList(a);
-        Integer b[] = new Integer[] { 2, 4, 6, 8, 10 };
-        List<Integer> expectedList = Arrays.asList(b);
+        List<Integer> normalList = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        List<Integer> expectedList = Arrays.asList(2, 4, 6, 8, 10);
         //System.out.println(expectedList);
 
         //When
