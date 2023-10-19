@@ -18,6 +18,7 @@ class WeatherForecastTestSuite {
     private Temperatures temperaturesMock;
 
     private static int testCounter = 0;
+    Map<String, Double> temperaturesMap = new HashMap<>();
 
     @BeforeAll
     public static void beforeAllTests() {
@@ -32,6 +33,13 @@ class WeatherForecastTestSuite {
     public void beforeEveryTest() {
         testCounter++;
         System.out.println("#" + testCounter + " Test Case: begin");
+        temperaturesMap.put("Rzeszow", 25.5);
+        temperaturesMap.put("Krakow", 26.2);
+        temperaturesMap.put("Wroclaw", 24.8);
+        temperaturesMap.put("Warszawa", 25.2);
+        temperaturesMap.put("Gdansk", 26.1);
+
+        when(temperaturesMock.getTemperatures()).thenReturn(temperaturesMap);
     }
 
     @AfterEach
@@ -42,15 +50,6 @@ class WeatherForecastTestSuite {
     @Test
     void testCalculateForecastWithMock() {
         //Given
-        Map<String, Double> temperaturesMap = new HashMap<>();
-        temperaturesMap.put("Rzeszow", 25.5);
-        temperaturesMap.put("Krakow", 26.2);
-        temperaturesMap.put("Wroclaw", 24.8);
-        temperaturesMap.put("Warszawa", 25.2);
-        temperaturesMap.put("Gdansk", 26.1);
-
-        when(temperaturesMock.getTemperatures()).thenReturn(temperaturesMap);
-
         WeatherForecast weatherForecast = new WeatherForecast(temperaturesMock);
 
         //When
@@ -63,15 +62,6 @@ class WeatherForecastTestSuite {
     @Test
     void testCalculateAverageTemperatureWithMock() {
         //Given
-        Map<String, Double> temperaturesMap = new HashMap<>();
-        temperaturesMap.put("Rzeszow", 25.5);
-        temperaturesMap.put("Krakow", 26.2);
-        temperaturesMap.put("Wroclaw", 24.8);
-        temperaturesMap.put("Warszawa", 25.2);
-        temperaturesMap.put("Gdansk", 26.1);
-
-        when(temperaturesMock.getTemperatures()).thenReturn(temperaturesMap);
-
         WeatherForecast weatherForecast = new WeatherForecast(temperaturesMock);
 
         //When
@@ -84,15 +74,6 @@ class WeatherForecastTestSuite {
     @Test
     void testCalculateMedianTemperatureWithMock() {
         //Given
-        Map<String, Double> temperaturesMap = new HashMap<>();
-        temperaturesMap.put("Rzeszow", 25.5);
-        temperaturesMap.put("Krakow", 26.2);
-        temperaturesMap.put("Wroclaw", 24.8);
-        temperaturesMap.put("Warszawa", 25.2);
-        temperaturesMap.put("Gdansk", 26.1);
-
-        when(temperaturesMock.getTemperatures()).thenReturn(temperaturesMap);
-
         WeatherForecast weatherForecast = new WeatherForecast(temperaturesMock);
 
         //When
