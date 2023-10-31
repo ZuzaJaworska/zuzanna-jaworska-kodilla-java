@@ -177,8 +177,10 @@ public class RpsRunner {
                             """);
                     String resetSure = scanner.next();
                     if (resetSure.equals("y")) {
-                        System.out.println("--------------------" +
-                                "\nThe game has been restarted.\n");
+                        System.out.println("""
+                                --------------------
+                                The game has been restarted.
+                                """);
                         theGame.restartGame();
                         ceilingScore = scanner.nextInt();
                     }
@@ -186,13 +188,13 @@ public class RpsRunner {
             }
 
             if (theGame.winCounter == ceilingScore) {
-                System.out.println("Congratulations, " + theGame.playersName + "! You won the game!");
+                System.out.println("Congratulations, " + theGame.playersName + "! You won the game!\n");
 
             } else if (theGame.loseCounter == ceilingScore) {
-                System.out.println("Sorry, " + theGame.playersName + ". You lost the game.\n\n");
+                System.out.println("Sorry, " + theGame.playersName + ". You lost the game.\n");
             }
 
-
+            //do you want to play again or close the app
             System.out.println("""
                     To play again press "n".
                     Press any other button to exit application.
