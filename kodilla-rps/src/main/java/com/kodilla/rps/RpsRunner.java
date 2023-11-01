@@ -203,7 +203,7 @@ public class RpsRunner {
             if (anotherGame.equals("n")) {
                 System.out.println("""
                         --------------------
-                        "Welcome to the new game!
+                        Welcome to the new game!
                         """);
                 theGame.restartGame();
                 ceilingScore = scanner.nextInt();
