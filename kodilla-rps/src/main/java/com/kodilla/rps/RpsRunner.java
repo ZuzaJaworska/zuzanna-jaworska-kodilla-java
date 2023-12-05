@@ -28,7 +28,9 @@ public class RpsRunner {
 
         //how many won rounds will mean a victory
         System.out.println("How many won rounds will mean a victory? (enter number)");
+
         ceilingScore = scanner.nextInt();
+
 
         while (!exitGame) {
             while (ceilingScore > theGame.winCounter && ceilingScore > theGame.loseCounter && !exitNow) {
