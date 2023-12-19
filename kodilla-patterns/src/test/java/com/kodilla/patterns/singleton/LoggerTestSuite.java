@@ -10,6 +10,7 @@ public class LoggerTestSuite {
     void testGetLastLog() {
         //Given
         //When
+        Logger.getInstance().log("randomLogName");
         Logger.getInstance().log("testLogName");
         String resultName = Logger.getInstance().getLastLog();
         //Then
