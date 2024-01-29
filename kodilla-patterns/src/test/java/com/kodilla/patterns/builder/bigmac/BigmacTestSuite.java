@@ -6,8 +6,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class BigmacTestSuite {
 
-    private static final String BUN = "BUN_WITH_SESAME";
-
     @Test
     void testBigmacNew() {
         //Given
@@ -25,7 +23,6 @@ public class BigmacTestSuite {
         //When
         int howManyPatties = bigmac.getPattiesQty();
         int howManyIngredients = bigmac.getIngredients().size();
-
 
         //Then
         assertEquals(2, howManyPatties);
