@@ -85,4 +85,15 @@ public class Item {
     public void setInvoice(Invoice invoice) {
         this.invoice = invoice;
     }
+
+    @Override
+    public String toString() {
+        return "\nItem{" +
+               "id=" + id +
+               ", product=" + product +
+               ", price=" + price +
+               ", quantity=" + quantity +
+               ", value=" + value +
+               '}';
+    }
 }

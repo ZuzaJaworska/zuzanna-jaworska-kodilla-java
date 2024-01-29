@@ -3,6 +3,7 @@ package com.kodilla.hibernate.invoice.dao;
 import com.kodilla.hibernate.invoice.Invoice;
 import com.kodilla.hibernate.invoice.Item;
 import com.kodilla.hibernate.invoice.Product;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,14 +12,23 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 public class InvoiceDaoTestSuite {
 
     @Autowired
     private InvoiceDao invoiceDao;
+
+    @AfterEach
+    public void cleanUp() {
+        //CleanUp
+        try {
+            invoiceDao.deleteAll();
+        } catch (Exception e) {
+            //do nothing
+        }
+    }
 
     @Test
     void testInvoiceDaoSave() {
@@ -31,7 +41,7 @@ public class InvoiceDaoTestSuite {
         Item item3 = new Item(product2, new BigDecimal("3.21"), 2);
         Item item4 = new Item(product2, new BigDecimal("4.32"), 1);
 
-        Invoice invoice = new Invoice("FV 1");
+        Invoice invoice = new Invoice("FV/1/2024");
 
         item1.setInvoice(invoice);
         item2.setInvoice(invoice);
@@ -49,16 +59,18 @@ public class InvoiceDaoTestSuite {
         invoiceDao.save(invoice);
         int id = invoice.getId();
         int itemsListSize = invoice.getItems().size();
+        Item item5 = new Item(product2, new BigDecimal("1.11"), 1);
+        System.out.println(invoice);
 
         //Then
         assertNotEquals(0, id);
         assertEquals(4, itemsListSize);
 
-        //CleanUp
-        try {
-            invoiceDao.deleteById(id);
-        } catch (Exception e) {
-            //do nothing
-        }
+        assertEquals(id, item1.getInvoice().getId());
+        assertEquals(id, item2.getInvoice().getId());
+        assertEquals(id, item3.getInvoice().getId());
+        assertEquals(id, item4.getInvoice().getId());
+
+        assertFalse(invoice.getItems().contains(item5));
     }
 }
