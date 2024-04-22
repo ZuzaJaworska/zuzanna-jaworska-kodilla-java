@@ -11,4 +11,6 @@ include 'kodilla-jdbc'
 include 'kodilla-hibernate'
 include 'untitled'
 include 'kodilla-good-patterns'
+include 'kodilla-patterns2'
+include 'kodilla-patterns2'
 
