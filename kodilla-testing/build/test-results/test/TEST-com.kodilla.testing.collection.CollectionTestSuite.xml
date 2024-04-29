@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.collection.CollectionTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-04-04T18:36:58" hostname="ZULAP" time="0.026">
+  <properties/>
+  <testcase name="when create an empty list, then exterminate should return empty list" classname="com.kodilla.testing.collection.CollectionTestSuite" time="0.023"/>
+  <testcase name="when create a numbers list, then exterminate should return even numbers list" classname="com.kodilla.testing.collection.CollectionTestSuite" time="0.002"/>
+  <system-out><![CDATA[Test Suite: begin
+Test Case: begin
+---Testing empty list---
+Test Case: end
+Test Case: begin
+---Testing normal list---
+Test Case: end
+Test Suite: end
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

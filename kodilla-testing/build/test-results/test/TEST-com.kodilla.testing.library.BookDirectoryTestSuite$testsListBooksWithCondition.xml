@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests for listBooksWithCondition()" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-04T18:37:00" hostname="ZULAP" time="0.039">
+  <properties/>
+  <testcase name="testListBooksWithConditionFragmentShorterThan3()" classname="com.kodilla.testing.library.BookDirectoryTestSuite$testsListBooksWithCondition" time="0.024"/>
+  <testcase name="testListBooksWithConditionMoreThan20()" classname="com.kodilla.testing.library.BookDirectoryTestSuite$testsListBooksWithCondition" time="0.005"/>
+  <testcase name="testListBooksWithConditionReturnList()" classname="com.kodilla.testing.library.BookDirectoryTestSuite$testsListBooksWithCondition" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

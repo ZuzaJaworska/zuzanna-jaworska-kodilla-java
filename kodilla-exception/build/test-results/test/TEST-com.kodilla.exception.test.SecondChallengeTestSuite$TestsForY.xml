@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests for y" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-04T18:14:17" hostname="ZULAP" time="0.003">
+  <properties/>
+  <testcase name="testTheMethodWhenYIsIncorrect()" classname="com.kodilla.exception.test.SecondChallengeTestSuite$TestsForY" time="0.003"/>
+  <system-out><![CDATA[#3 Test Case: begin
+#3 Test Case: end
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

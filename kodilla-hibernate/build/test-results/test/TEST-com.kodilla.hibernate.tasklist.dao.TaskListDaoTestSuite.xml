@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.hibernate.tasklist.dao.TaskListDaoTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-04-22T22:19:45" hostname="ZULAP" time="0.081">
+  <properties/>
+  <testcase name="testTaskListDaoSaveWithTasks()" classname="com.kodilla.hibernate.tasklist.dao.TaskListDaoTestSuite" time="0.046"/>
+  <testcase name="testFindByListName()" classname="com.kodilla.hibernate.tasklist.dao.TaskListDaoTestSuite" time="0.032"/>
+  <system-out><![CDATA[2024-04-23 00:19:45.929  INFO 19252 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kodilla.hibernate.tasklist.dao.TaskListDaoTestSuite], using SpringBootContextLoader
+2024-04-23 00:19:45.930  INFO 19252 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.kodilla.hibernate.tasklist.dao.TaskListDaoTestSuite]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-04-23 00:19:45.930  INFO 19252 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kodilla.hibernate.tasklist.dao.TaskListDaoTestSuite]: TaskListDaoTestSuite does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-04-23 00:19:45.937  INFO 19252 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kodilla.hibernate.KodillaHibernateApplication for test class com.kodilla.hibernate.tasklist.dao.TaskListDaoTestSuite
+2024-04-23 00:19:45.939  INFO 19252 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-04-23 00:19:45.940  INFO 19252 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6a0aa5e2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@630bd5e7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2389f546, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5b6ec94a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@64745270, org.springframework.test.context.transaction.TransactionalTestExecutionListener@596d17f4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@35a2ea5a, org.springframework.test.context.event.EventPublishingTestExecutionListener@18ab513d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5e8a678a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6fe91918, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4d3bde85, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@f5b4ca6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@260ccf0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2566247d]
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: insert into tasklist (description, listname, id) values (?, ?, ?)
+Hibernate: insert into tasks_financials (paid, price, id) values (?, ?, ?)
+Hibernate: insert into tasks (created, description, duration, tasks_financials_id, tasklist_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into tasks_financials (paid, price, id) values (?, ?, ?)
+Hibernate: insert into tasks (created, description, duration, tasks_financials_id, tasklist_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: select tasklist0_.id as id1_6_0_, tasklist0_.description as descript2_6_0_, tasklist0_.listname as listname3_6_0_ from tasklist tasklist0_ where tasklist0_.id=?
+Hibernate: select tasks0_.tasklist_id as tasklist6_7_0_, tasks0_.id as id1_7_0_, tasks0_.id as id1_7_1_, tasks0_.created as created2_7_1_, tasks0_.description as descript3_7_1_, tasks0_.duration as duration4_7_1_, tasks0_.tasks_financials_id as tasks_fi5_7_1_, tasks0_.tasklist_id as tasklist6_7_1_, taskfinanc1_.id as id1_8_2_, taskfinanc1_.paid as paid2_8_2_, taskfinanc1_.price as price3_8_2_ from tasks tasks0_ left outer join tasks_financials taskfinanc1_ on tasks0_.tasks_financials_id=taskfinanc1_.id where tasks0_.tasklist_id=?
+Hibernate: delete from tasks where id=?
+Hibernate: delete from tasks_financials where id=?
+Hibernate: delete from tasks where id=?
+Hibernate: delete from tasks_financials where id=?
+Hibernate: delete from tasklist where id=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: insert into tasklist (description, listname, id) values (?, ?, ?)
+Hibernate: select tasklist0_.id as id1_6_, tasklist0_.description as descript2_6_, tasklist0_.listname as listname3_6_ from tasklist tasklist0_ where tasklist0_.listname=?
+Hibernate: select tasklist0_.id as id1_6_0_, tasklist0_.description as descript2_6_0_, tasklist0_.listname as listname3_6_0_ from tasklist tasklist0_ where tasklist0_.id=?
+Hibernate: select tasks0_.tasklist_id as tasklist6_7_0_, tasks0_.id as id1_7_0_, tasks0_.id as id1_7_1_, tasks0_.created as created2_7_1_, tasks0_.description as descript3_7_1_, tasks0_.duration as duration4_7_1_, tasks0_.tasks_financials_id as tasks_fi5_7_1_, tasks0_.tasklist_id as tasklist6_7_1_, taskfinanc1_.id as id1_8_2_, taskfinanc1_.paid as paid2_8_2_, taskfinanc1_.price as price3_8_2_ from tasks tasks0_ left outer join tasks_financials taskfinanc1_ on tasks0_.tasks_financials_id=taskfinanc1_.id where tasks0_.tasklist_id=?
+Hibernate: delete from tasklist where id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.spring.web.KodillaSpringWebApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-04T18:36:51" hostname="ZULAP" time="1.304">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.kodilla.spring.web.KodillaSpringWebApplicationTests" time="1.304"/>
+  <system-out><![CDATA[20:36:48.578 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.kodilla.spring.web.KodillaSpringWebApplicationTests]: KodillaSpringWebApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:36:48.701 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.kodilla.spring.web.KodillaSpringWebApplication for test class com.kodilla.spring.web.KodillaSpringWebApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2024-04-04T20:36:49.333+02:00  INFO 15328 --- [    Test worker] c.k.s.w.KodillaSpringWebApplicationTests : Starting KodillaSpringWebApplicationTests using Java 17.0.10 with PID 15328 (started by Zuzanna in C:\dev\zuzanna-jaworska-kodilla-java\kodilla-spring-web)
+2024-04-04T20:36:49.335+02:00  INFO 15328 --- [    Test worker] c.k.s.w.KodillaSpringWebApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-04-04T20:36:51.759+02:00  INFO 15328 --- [    Test worker] c.k.s.w.KodillaSpringWebApplicationTests : Started KodillaSpringWebApplicationTests in 2.814 seconds (process running for 4.244)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

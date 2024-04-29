@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.stream.array.ArrayOperationsTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-04T18:36:55" hostname="ZULAP" time="0.049">
+  <properties/>
+  <testcase name="testGetAverage()" classname="com.kodilla.stream.array.ArrayOperationsTestSuite" time="0.049"/>
+  <system-out><![CDATA[Array of 20 elements:
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+32
+34
+36
+38
+42
+average = 21.1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

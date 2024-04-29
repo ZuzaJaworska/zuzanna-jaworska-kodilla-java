@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.exception.test.SecondChallengeTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-04-04T18:14:17" hostname="ZULAP" time="0.009">
+  <properties/>
+  <testcase name="testTheMethodForCorrectNumbers()" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.007"/>
+  <testcase name="testTheMethodWhenXAndYAreIncorrect()" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.001"/>
+  <system-out><![CDATA[Look at all these tests:
+
+#1 Test Case: begin
+#1 Test Case: end
+
+#2 Test Case: begin
+#2 Test Case: end
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

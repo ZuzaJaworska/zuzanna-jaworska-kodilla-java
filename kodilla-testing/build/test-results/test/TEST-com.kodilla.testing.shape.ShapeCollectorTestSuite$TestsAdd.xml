@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests for addFigure()" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-04T18:37:00" hostname="ZULAP" time="0.003">
+  <properties/>
+  <testcase name="testAddFigure()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestsAdd" time="0.003"/>
+  <system-out><![CDATA[#6 Test Case: begin
+#6 Test Case: end
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

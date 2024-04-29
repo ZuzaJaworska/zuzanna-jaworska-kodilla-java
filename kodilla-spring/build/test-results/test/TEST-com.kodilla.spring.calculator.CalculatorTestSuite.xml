@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.spring.calculator.CalculatorTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-04T18:36:44" hostname="ZULAP" time="0.004">
+  <properties/>
+  <testcase name="testCalculations()" classname="com.kodilla.spring.calculator.CalculatorTestSuite" time="0.004"/>
+  <system-out><![CDATA[2024-04-04T20:36:44.747+02:00  INFO 15640 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kodilla.spring.calculator.CalculatorTestSuite]: CalculatorTestSuite does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-04-04T20:36:44.757+02:00  INFO 15640 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kodilla.spring.KodillaSpringApplication for test class com.kodilla.spring.calculator.CalculatorTestSuite
+Wynik: 8.0
+Wynik: 4.0
+Wynik: 12.0
+Wynik: 3.0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

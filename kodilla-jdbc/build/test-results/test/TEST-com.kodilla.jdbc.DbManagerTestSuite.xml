@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.jdbc.DbManagerTestSuite" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-04-29T13:10:27" hostname="ZULAP" time="0.314">
+  <properties/>
+  <testcase name="testSelectUsers()" classname="com.kodilla.jdbc.DbManagerTestSuite" time="0.291"/>
+  <testcase name="testConnect()" classname="com.kodilla.jdbc.DbManagerTestSuite" time="0.001"/>
+  <testcase name="testSelectUsersAndPosts()" classname="com.kodilla.jdbc.DbManagerTestSuite" time="0.007"/>
+  <testcase name="testSelectUsersAndTasks()" classname="com.kodilla.jdbc.DbManagerTestSuite" time="0.01"/>
+  <system-out><![CDATA[1, John, Smith
+2, Zachary, Lee
+3, Stephanie, Kovalsky
+4, Thomas, Landgren
+5, John, Thomson
+John, Smith, 2
+John, Smith, Task 1
+John, Smith, Task 6
+John, Smith, Task 11
+John, Smith, Task 16
+Zachary, Lee, Task 2
+Zachary, Lee, Task 7
+Zachary, Lee, Task 12
+Zachary, Lee, Task 17
+Stephanie, Kovalsky, Task 3
+Stephanie, Kovalsky, Task 8
+Stephanie, Kovalsky, Task 13
+Stephanie, Kovalsky, Task 18
+Thomas, Landgren, Task 4
+Thomas, Landgren, Task 9
+Thomas, Landgren, Task 14
+Thomas, Landgren, Task 19
+John, Thomson, Task 5
+John, Thomson, Task 10
+John, Thomson, Task 15
+John, Thomson, Task 20
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

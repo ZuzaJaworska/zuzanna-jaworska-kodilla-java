@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.statistics.AdvancedStatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-04-04T18:36:59" hostname="ZULAP" time="0.173">
+  <properties/>
+  <testcase name="testWhen100Users()" classname="com.kodilla.testing.forum.statistics.AdvancedStatisticsTestSuite" time="0.119"/>
+  <testcase name="testWhenZeroPosts()" classname="com.kodilla.testing.forum.statistics.AdvancedStatisticsTestSuite" time="0.007"/>
+  <testcase name="testWhenZeroUsers()" classname="com.kodilla.testing.forum.statistics.AdvancedStatisticsTestSuite" time="0.006"/>
+  <testcase name="testWhenCommentsLessThanPosts()" classname="com.kodilla.testing.forum.statistics.AdvancedStatisticsTestSuite" time="0.005"/>
+  <testcase name="testWhenCommentsMoreThanPosts()" classname="com.kodilla.testing.forum.statistics.AdvancedStatisticsTestSuite" time="0.007"/>
+  <testcase name="testWhenZeroComments()" classname="com.kodilla.testing.forum.statistics.AdvancedStatisticsTestSuite" time="0.005"/>
+  <testcase name="testWhen1000Posts()" classname="com.kodilla.testing.forum.statistics.AdvancedStatisticsTestSuite" time="0.007"/>
+  <system-out><![CDATA[The beginning of tests
+#1 Test Case: begin
+#1 Test Case: end
+
+#2 Test Case: begin
+#2 Test Case: end
+
+#3 Test Case: begin
+#3 Test Case: end
+
+#4 Test Case: begin
+#4 Test Case: end
+
+#5 Test Case: begin
+#5 Test Case: end
+
+#6 Test Case: begin
+#6 Test Case: end
+
+#7 Test Case: begin
+#7 Test Case: end
+
+The end of tests
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

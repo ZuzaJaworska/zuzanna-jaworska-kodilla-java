@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.spring.library.LibraryTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-04T18:36:44" hostname="ZULAP" time="0.146">
+  <properties/>
+  <testcase name="testSaveToDb()" classname="com.kodilla.spring.library.LibraryTestSuite" time="0.003"/>
+  <testcase name="testLoadFromDb()" classname="com.kodilla.spring.library.LibraryTestSuite" time="0.002"/>
+  <testcase name="testContext()" classname="com.kodilla.spring.library.LibraryTestSuite" time="0.138"/>
+  <system-out><![CDATA[2024-04-04T20:36:44.927+02:00  INFO 15640 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kodilla.spring.library.LibraryTestSuite]: LibraryTestSuite does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-04-04T20:36:44.936+02:00  INFO 15640 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kodilla.spring.KodillaSpringApplication for test class com.kodilla.spring.library.LibraryTestSuite
+Saving data to the database.
+Loading data from the database
+===== Beans list: ==== >>
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.event.internalEventListenerProcessor
+org.springframework.context.event.internalEventListenerFactory
+calculator
+display
+forumUser
+kodillaSpringApplication
+libraryConfig
+boardConfig
+readerConfig
+circle
+shapesFactory
+triangle
+org.springframework.boot.autoconfigure.AutoConfigurationPackages
+library
+libraryDbController
+toDoList
+inProgressList
+doneList
+getBoard
+getReader
+book1
+createSquare
+chosenShape
+org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+propertySourcesPlaceholderConfigurer
+org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration
+forceAutoProxyCreatorToUseClassProxying
+org.springframework.boot.autoconfigure.aop.AopAutoConfiguration
+org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration
+applicationAvailability
+org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor
+org.springframework.boot.context.internalConfigurationPropertiesBinder
+org.springframework.boot.context.properties.BoundConfigurationProperties
+org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter
+org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration
+lifecycleProcessor
+spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties
+org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties
+org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration
+spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties
+org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor
+org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration
+fileWatcher
+sslPropertiesSslBundleRegistrar
+sslBundleRegistry
+spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties
+org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$ThreadPoolTaskExecutorBuilderConfiguration
+threadPoolTaskExecutorBuilder
+org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorBuilderConfiguration
+taskExecutorBuilder
+org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration
+simpleAsyncTaskExecutorBuilder
+org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorConfiguration
+applicationTaskExecutor
+org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration
+spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties
+org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$ThreadPoolTaskSchedulerBuilderConfiguration
+threadPoolTaskSchedulerBuilder
+org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$TaskSchedulerBuilderConfiguration
+taskSchedulerBuilder
+org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration
+simpleAsyncTaskSchedulerBuilder
+org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration
+spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties
+org.springframework.aop.config.internalAutoProxyCreator
+<< ===== Beans list ====
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.weather.mock.WeatherForecastTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-04-04T18:37:00" hostname="ZULAP" time="0.063">
+  <properties/>
+  <testcase name="testCalculateMedianTemperatureWithMock()" classname="com.kodilla.testing.weather.mock.WeatherForecastTestSuite" time="0.051"/>
+  <testcase name="testCalculateAverageTemperatureWithMock()" classname="com.kodilla.testing.weather.mock.WeatherForecastTestSuite" time="0.004"/>
+  <testcase name="testCalculateForecastWithMock()" classname="com.kodilla.testing.weather.mock.WeatherForecastTestSuite" time="0.005"/>
+  <system-out><![CDATA[The beginning of tests
+#1 Test Case: begin
+#1 Test Case: end
+
+#2 Test Case: begin
+#2 Test Case: end
+
+#3 Test Case: begin
+#3 Test Case: end
+
+The end of tests
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
