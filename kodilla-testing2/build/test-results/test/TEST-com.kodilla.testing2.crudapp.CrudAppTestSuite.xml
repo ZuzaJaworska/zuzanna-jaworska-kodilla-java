@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing2.crudapp.CrudAppTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-02T12:50:35" hostname="ZULAP" time="48.671">
+<testsuite name="com.kodilla.testing2.crudapp.CrudAppTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-02T13:04:28" hostname="ZULAP" time="65.373">
   <properties/>
-  <testcase name="shouldCreateTrelloCard()" classname="com.kodilla.testing2.crudapp.CrudAppTestSuite" time="48.671"/>
+  <testcase name="shouldCreateTrelloCard()" classname="com.kodilla.testing2.crudapp.CrudAppTestSuite" time="65.373"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
